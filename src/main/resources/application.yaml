@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: employee-server
+
+  datasource:
+    url: jdbc:mysql://database-1.cxuyec2imlen.ap-southeast-2.rds.amazonaws.com/employeedb?allowPublicKeyRetrieval=true&useSSL=false
+    username: admin
+    password: Paramesh163
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 9090
